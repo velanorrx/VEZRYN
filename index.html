@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VEZRYN — Crafted for the Obsessed</title>
+
+    <meta
+        name="description"
+        content="VEZRYN — Performance fashion inspired by mythology, power and obsession."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        VEZRYN
+    </a>
+
+    <nav class="nav-links">
+        <a href="#collections">Collections</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#member">Member</a>
+        <a href="archive.html">The Archive</a>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button class="icon-button" onclick="openSearch()" aria-label="Search">
+            ⌕
+        </button>
+
+        <button class="icon-button" onclick="openMember()" aria-label="Account">
+            ♙
+        </button>
+
+        <button class="icon-button cart-button" onclick="openCart()" aria-label="Cart">
+            🛒
+            <span id="cartCount">0</span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     SEARCH OVERLAY
+========================================================= -->
+
+<div id="searchOverlay" class="overlay">
+
+    <button class="close-overlay" onclick="closeSearch()">×</button>
+
+    <div class="search-box">
+
+        <p>SEARCH VEZRYN</p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+        >
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">ESTABLISHED IN THAILAND</p>
+
+        <h1>
+            CRAFTED<br>
+            FOR THE<br>
+            <span>OBSESSED</span>
+        </h1>
+
+        <p class="hero-description">
+            Performance fashion forged from mythology,
+            discipline and identity.
+        </p>
+
+        <a href="#collections" class="primary-button">
+            EXPLORE COLLECTIONS
+        </a>
+
+    </div>
+
+    <div class="hero-scroll">
+        SCROLL TO DISCOVER MORE
+        <span>↓</span>
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BRAND STATEMENT
+========================================================= -->
+
+<section class="statement">
+
+    <p class="eyebrow">VEZRYN</p>
+
+    <h2>
+        WEAR YOUR<br>
+        <span>FEELING</span>
+    </h2>
+
+    <p>
+        VEZRYN creates performance apparel inspired by
+        legends, gods, warriors and myths — engineered for those
+        who refuse to remain ordinary.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     COLLECTIONS
+========================================================= -->
+
+<section id="collections" class="collections-section">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="eyebrow">THE COLLECTIONS</p>
+
+            <h2>
+                THREE WORLDS<br>
+                ONE IDENTITY
+            </h2>
+        </div>
+
+    </div>
+
+
+    <div class="collection-grid">
+
+
+        <!-- FALLEN ANGEL -->
+
+        <article class="collection-card fallen">
+
+            <div class="collection-image">
+                <img
+                    src="Photos/Fallen_Angel.png"
+                    alt="VEZRYN Fallen Angel Collection"
+                >
+            </div>
+
+            <div class="collection-info">
+
+                <p>01 — COLLECTION</p>
+
+                <h3>FALLEN ANGEL</h3>
+
+                <span>
+                    Power born from the fall.
+                </span>
+
+                <a href="#shop" class="text-link">
+                    EXPLORE →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- 12 OLYMPIANS -->
+
+        <article class="collection-card olympians">
+
+            <div class="collection-image">
+                <img
+                    src="Photos/12_Olympians.png"
+                    alt="VEZRYN 12 Olympians Collection"
+                >
+            </div>
+
+            <div class="collection-info">
+
+                <p>02 — COLLECTION</p>
+
+                <h3>12 OLYMPIANS</h3>
+
+                <span>
+                    Twelve gods. Twelve forces.
+                </span>
+
+                <a href="#shop" class="text-link">
+                    EXPLORE →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- DRACULA -->
+
+        <article class="collection-card dracula">
+
+            <div class="collection-image">
+
+                <div class="limited-badge">
+                    LIMITED 50
+                </div>
+
+                <img
+                    src="Photos/Dracula.png"
+                    alt="VEZRYN Dracula Collaboration"
+                >
+
+            </div>
+
+            <div class="collection-info">
+
+                <p>03 — Collection</p>
+
+                <h3>Dracula</h3>
+
+                <span>
+                    Red triumph in his eyes, a smile Judas would envy in Hell
+                </span>
+
+                <a href="#shop" class="text-link">
+                    DISCOVER →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="home-archive" id="home-archive">
+  <div class="home-archive-inner">
+
+    <div class="home-archive-image">
+      <img
+        src="Photos/Content01.png"
+        alt="VEZRYN mythology-inspired campaign"
+        loading="lazy"
+        width="1024"
+        height="1536"
+      >
+    </div>
+
+<!-- =========================================================
+     STORYTELLING
+========================================================= -->
+
+    <div class="home-archive-content">
+      <span class="home-archive-eyebrow">
+        THE VEZRYN WORLD
+      </span>
+
+      <h2>
+        EVERY DETAIL<br>
+        HAS A STORY
+      </h2>
+
+      <p>
+        Beyond the garment lies the meaning.
+        Discover the mythology, philosophy, and creative
+        process behind the collections that define VEZRYN.
+      </p>
+
+      <a href="archive.html" class="archive-home-btn">
+        EXPLORE THE ARCHIVE
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about" class="about-section">
+
+    <div class="about-title">
+
+        <p class="eyebrow">THE VEZRYN PHILOSOPHY</p>
+
+        <h2>
+            DISCIPLINE<br>
+            BECOMES<br>
+            <span>IDENTITY</span>
+        </h2>
+
+    </div>
+
+
+    <div class="about-text">
+
+        <p>
+            VEZRYN is a performance fashion brand built around
+            mythology, strength and self-expression.
+        </p>
+
+        <p>
+            Every collection draws from a different legend,
+            transforming symbolic elements into contemporary
+            performance apparel.
+        </p>
+
+        <p>
+            Bold, but never loud.
+            Powerful, but never without purpose.
+        </p>
+
+        <p class="signature">
+            VEZRYN
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MEMBER
+========================================================= -->
+
+<section id="member" class="member-section">
+
+    <div class="member-content">
+
+        <p class="eyebrow">VEZRYN MEMBER</p>
+
+        <h2>
+            ENTER THE<br>
+            <span>INNER CIRCLE</span>
+        </h2>
+
+        <p>
+            Join VEZRYN Member for early access to collections,
+            exclusive drops and member-only experiences.
+        </p>
+
+        <button class="primary-button" onclick="openMember()">
+            BECOME A MEMBER
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     NEWSLETTER
+========================================================= -->
+
+<section class="newsletter">
+
+    <p class="eyebrow">STAY OBSESSED</p>
+
+    <h2>
+        BE THE FIRST<br>
+        TO KNOW
+    </h2>
+
+    <p>
+        New drops. Limited releases. VEZRYN stories.
+    </p>
+
+    <form onsubmit="subscribe(event)">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="YOUR EMAIL ADDRESS"
+            required
+        >
+
+        <button type="submit">
+            JOIN →
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <h2>VEZRYN</h2>
+
+        <p>
+            CRAFTED FOR THE OBSESSED.
+        </p>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h4>SHOP</h4>
+
+        <a href="#collections">Collections</a>
+        <a href="#shop">All Products</a>
+        <a href="#member">Member</a>
+        <a href="#archive.html">The Archive</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h4>HELP</h4>
+
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">Size Guide</a>
+        <a href="#">Customer Support</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h4>FOLLOW</h4>
+
+        <a href="https://www.instagram.com/vezrynofficial/"
+        target="_blank"
+        rel="noopener noreferrer">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="https://discord.gg/emNHEdGa5"
+        target="_blank"
+        rel="noopener noreferrer">DISCORD</a>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>© 2026 VEZRYN. ALL RIGHTS RESERVED.</p>
+
+        <p>ESTABLISHED IN THAILAND</p>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     CART MODAL
+========================================================= -->
+
+<div id="cartModal" class="modal">
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeCart()"
+        >
+            ×
+        </button>
+
+        <p class="eyebrow">YOUR BAG</p>
+
+        <h2>SHOPPING CART</h2>
+
+        <div id="cartItems">
+
+            <p class="empty-cart">
+                Your bag is currently empty.
+            </p>
+
+        </div>
+
+        <div class="cart-total">
+
+            <span>TOTAL</span>
+
+            <strong id="cartTotal">
+                ฿0
+            </strong>
+
+        </div>
+
+        <button class="primary-button checkout-button">
+            CHECKOUT
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     MEMBER MODAL
+========================================================= -->
+
+<div id="memberModal" class="modal">
+
+    <div class="modal-content member-modal">
+
+        <button
+            class="modal-close"
+            onclick="closeMember()"
+        >
+            ×
+        </button>
+
+        <p class="eyebrow">VEZRYN MEMBER</p>
+
+        <h2>ENTER THE<br><span>INNER CIRCLE.</span></h2>
+
+        <form onsubmit="createMember(event)">
+
+            <input
+                type="text"
+                placeholder="FULL NAME"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="EMAIL"
+                required
+            >
+
+            <input
+                type="password"
+                placeholder="PASSWORD"
+                required
+            >
+
+            <button class="primary-button">
+                CREATE ACCOUNT
+            </button>
+
+        </form>
+
+        <p class="member-note">
+            Membership is free. Your account will let you
+            access future exclusive drops and member benefits.
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
